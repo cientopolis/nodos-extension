@@ -1,5 +1,5 @@
 # nodos-extension
-A MediaWiki extension that creates the semantic properties to represent the ontology of the Performing Arts
+A MediaWiki extension that creates the semantic properties, forms and templates needed to represent and use the ontology of the Performing Arts in any wiki.
 
 ## Instalation
 
