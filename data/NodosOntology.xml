@@ -902,16 +902,16 @@ Editar la página para ver el texto de la plantilla.
     <ns>10</ns>
     <id>199</id>
     <revision>
-      <id>2132</id>
-      <parentid>1286</parentid>
-      <timestamp>2017-02-03T02:29:22Z</timestamp>
+      <id>4389</id>
+      <parentid>4388</parentid>
+      <timestamp>2018-05-24T12:06:35Z</timestamp>
       <contributor>
-        <username>Vika</username>
-        <id>3</id>
+        <username>Dtorres</username>
+        <id>2</id>
       </contributor>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="873">&lt;noinclude&gt;
+      <text xml:space="preserve" bytes="1177">&lt;noinclude&gt;
 Esta es la plantilla &quot;CajaDatosEspacio&quot;. Debe llamarse en el siguiente formato:
 &lt;pre&gt;
 {{CajaDatosEspacio
@@ -929,7 +929,7 @@ Editar la página para ver el texto de la plantilla.
 &lt;div class=&quot;info&quot;&gt;
 &lt;div&gt;
 {{#if: {{{Direccion|}}} |  &lt;span&gt;&lt;b&gt;Dirección:&lt;/b&gt; [[DireccionEspacio::{{{Direccion|}}}]] &lt;/span&gt;&lt;br/&gt; }}{{#if: {{{Ciudad|}}} | &lt;span&gt;&lt;b&gt;Ciudad:&lt;/b&gt; [[CiudadEspacio::{{{Ciudad|}}}]] &lt;/span&gt; &lt;br/&gt; }}{{#if: {{{Pais|}}} |  &lt;span&gt;&lt;b&gt;País:&lt;/b&gt; [[PaisEspacio::{{{Pais|}}}]] &lt;/span&gt; &lt;br/&gt; }}
-
+{{#if: {{{Direccion|}}} | {{#if: {{{Ciudad|}}} | {{#if: {{{Pais|}}} |  &lt;span&gt;&lt;b&gt;Coordenadas:&lt;/b&gt; [[Has coordinates:: {{#geocode:{{#show: {{FULLPAGENAME}} |?DireccionEspacio }}, {{#show: {{FULLPAGENAME}} |?CiudadEspacio }}, {{#show: {{FULLPAGENAME}} |?PaisEspacio }}}}]] &lt;/span&gt;&lt;br/&gt;   |   }} |   }} |  }}
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -938,7 +938,7 @@ Editar la página para ver el texto de la plantilla.
 
 [[Categoría:Espacios]]
 &lt;/includeonly&gt;</text>
-      <sha1>jbbq5283y9wmrh43e5d8sqjhxw77zv7</sha1>
+      <sha1>972azfanlj5l12vbtw78olrqc4bedlv</sha1>
     </revision>
   </page>
   <page>
@@ -1792,21 +1792,22 @@ Editar la página para ver el texto de la plantilla.
     <ns>10</ns>
     <id>28</id>
     <revision>
-      <id>2205</id>
-      <parentid>2204</parentid>
-      <timestamp>2017-03-07T23:32:07Z</timestamp>
+      <id>3561</id>
+      <parentid>2205</parentid>
+      <timestamp>2017-11-07T21:45:25Z</timestamp>
       <contributor>
         <username>Facu</username>
         <id>1</id>
       </contributor>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="702">&lt;noinclude&gt;
+      <text xml:space="preserve" bytes="871">&lt;noinclude&gt;
 Esta es la plantilla &quot;SobreLaObraV2&quot;. Debe llamarse en el siguiente formato:
 &lt;pre&gt;
 {{SobreLaObraV2
 |Sinopsis=
 |Motivacion=
+|ReseniaColaborativa=
 }}
 &lt;/pre&gt;
 Editar la página para ver el texto de la plantilla.
@@ -1816,6 +1817,9 @@ Editar la página para ver el texto de la plantilla.
 }}
 {{#if: {{{Motivacion|}}} | ==Motivación==
 {{{Motivacion|}}} {{#set:Motivacion={{{Motivacion|}}}}}
+}}
+{{#if: {{{ReseniaColaborativa|}}} | ==Reseña Colaborativa==
+{{{ReseniaColaborativa|}}} {{#set:ReseniaColaborativa={{{ReseniaColaborativa|}}}}}
 }}
 
 {{#if: {{#ask:[[ObjetoJornada::+]][[ObraJornada::~*{{SUBJECTPAGENAME}}*]]}} | ==Participaciones en Festivales==
@@ -1828,7 +1832,7 @@ Editar la página para ver el texto de la plantilla.
 }}
 
 &lt;/includeonly&gt;</text>
-      <sha1>q2c2987p2ow2quaear3lk57vha4nzl4</sha1>
+      <sha1>c5auqtnpr2qt0bkigtdaphb4wlkrwhe</sha1>
     </revision>
   </page>
   <page>
@@ -2227,16 +2231,16 @@ si ya existe una página con ese nombre, serás dirigido a un formulario para ed
     <ns>106</ns>
     <id>97</id>
     <revision>
-      <id>1850</id>
-      <parentid>1848</parentid>
-      <timestamp>2016-11-27T01:33:43Z</timestamp>
+      <id>3562</id>
+      <parentid>3285</parentid>
+      <timestamp>2017-11-07T21:48:34Z</timestamp>
       <contributor>
-        <username>Vika</username>
-        <id>3</id>
+        <username>Facu</username>
+        <id>1</id>
       </contributor>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="5361">&lt;noinclude&gt;
+      <text xml:space="preserve" bytes="5503">&lt;noinclude&gt;
 Este es el formulario &quot;Obra&quot;.
 Para crear una página con este formulario, escribe el nombre de la página a continuación;
 si ya existe una página con ese nombre, serás dirigido a un formulario para editar esa página.
@@ -2273,7 +2277,7 @@ si ya existe una página con ese nombre, serás dirigido a un formulario para ed
 | {{{field|Formato|input type=tokens|existing values only|values=Acción,Ensayo abierto,Escena,Espectáculo,Flashmob,Fotoperformance,Improvisación,Instalación,Intervención,Monólogo,Muestra,Número,Obra,Performance,Recorrido,Videoperformance,Videodanza,Work in Progress}}}
 |-
 ! Género o Disciplina: {{#info:Seleccione el género o disciplina de la obra. Puede ser más de uno}}
-| {{{field|Genero|input type=tokens|existing values only|values=Acrobacia,Butoh,Circo,Contact improvisación,Clown,Comedia,Comedia musical,Danza,Danza aérea,Danza afro,Danza clásica,Danza comunitaria,Danzas de salón,Danza jazz,Danza moderna,Danza contemporánea,Danzas de colectividades,Danzas folklóricas,Danza-teatro,Danzaterapia,Danzas urbanas,Expresión corporal,Flamenco,Hip Hop,Humor,Improvisación Teatral,Infantil,Interdisciplinar,Magia,Multidisciplinar,Murga,Opera,Performance,Stand Up,Tango,Teatro,Teatro aéreo,Teatro espontáneo,Teatro comunitario,Títeres}}}
+| {{{field|Genero|input type=tokens|existing values only|values=Acrobacia,Butoh,Circo,Contact improvisación,Clown,Comedia,Comedia musical,Danza,Danza aérea,Danza afro,Danza clásica,Danza comunitaria,Danzas de salón,Danza jazz,Danza moderna,Danza contemporánea,Danzas de colectividades,Danzas folklóricas,Danza-teatro,Danzaterapia,Danzas urbanas,Expresión corporal,Flamenco,Hip Hop,Humor,Improvisación Teatral,Infantil,Interdisciplinar,Magia,Multidisciplinar,Murga, Música, Opera,Performance,Stand Up,Tango,Teatro,Teatro aéreo,Teatro espontáneo,Teatro comunitario, Teatro de Objetos, Títeres}}}
 |}
 {{{end template}}}
 
@@ -2298,11 +2302,14 @@ si ya existe una página con ese nombre, serás dirigido a un formulario para ed
 
 {{{for template|SobreLaObraV2}}}
 {| class=&quot;formtable&quot;
-! Sinópsis: {{#info:Breve reseña o descripción de la obra}}
+! Sinópsis: {{#info:Breve descripción de la obra.}}
 | {{{field|Sinopsis}}}
 |-
 ! Motivación: {{#info: Dar cuenta de la motivación, inquietud o idea que dio origen a la obra.}}
 | {{{field|Motivacion}}}
+|-
+! Reseña Colaborativa: {{#info: Breve reseña o valoración personal de la obra.}}
+| {{{field|ReseniaColaborativa}}}
 |}
 {{{end template}}}
 
@@ -2371,7 +2378,7 @@ si ya existe una página con ese nombre, serás dirigido a un formulario para ed
 {{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
 
 &lt;/includeonly&gt;</text>
-      <sha1>4pinjtqg6m2kyt64yqqeju1bkwht80z</sha1>
+      <sha1>mh6rb60fuytxcu3q3mpzyfh9uc2jo6r</sha1>
     </revision>
   </page>
   <page>
@@ -2477,17 +2484,23 @@ si ya existe una página con ese nombre, serás dirigido a un formulario para ed
     <ns>14</ns>
     <id>203</id>
     <revision>
-      <id>623</id>
-      <timestamp>2016-05-24T23:20:23Z</timestamp>
+      <id>4368</id>
+      <parentid>4367</parentid>
+      <timestamp>2018-05-23T22:05:29Z</timestamp>
       <contributor>
-        <username>Facu</username>
-        <id>1</id>
+        <username>Dtorres</username>
+        <id>2</id>
       </contributor>
-      <comment>Página creada con «{{#default_form:Espacio}}»</comment>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="25">{{#default_form:Espacio}}</text>
-      <sha1>7n9ml8befb9ffdezmx1dfwqrovuwaw0</sha1>
+      <text xml:space="preserve" bytes="146">{{#default_form:Espacio}}
+
+== Ubicación de los espacios ==
+{{#ask: [[Category:Espacios]][[Has coordinates::+]]
+| ?Has coordinates
+| format=map
+}}</text>
+      <sha1>coqnrxrth191tz4ujejjxqoeswivh8m</sha1>
     </revision>
   </page>
   <page>
@@ -2566,6 +2579,42 @@ si ya existe una página con ese nombre, serás dirigido a un formulario para ed
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="25">{{#default_form:Persona}}</text>
       <sha1>gquhweiype8xtjmuxitgiyzlykba2mw</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:Has coordinates</title>
+    <ns>102</ns>
+    <id>1613</id>
+    <revision>
+      <id>4318</id>
+      <timestamp>2018-05-22T22:51:07Z</timestamp>
+      <contributor>
+        <username>Dtorres</username>
+        <id>2</id>
+      </contributor>
+      <comment>Página creada con «This attribute describes the [[Has type::Geographic coordinate|geographic coordinate]] of some place. If a page contains a property with this attribute, then the page's fac...»</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="312">This attribute describes the [[Has type::Geographic coordinate|geographic coordinate]] of some place. If a page contains a property with this attribute, then the page's factbox will also provide links to [[Provides service::online maps|online maps]]; this uses SMW's [[Help:Service links|service links]] feature.</text>
+      <sha1>nhwxkf6glimnnde0c43c41hbfc9eeqk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Atributo:ReseniaColaborativa</title>
+    <ns>102</ns>
+    <id>1233</id>
+    <revision>
+      <id>3560</id>
+      <timestamp>2017-11-07T21:44:25Z</timestamp>
+      <contributor>
+        <username>Facu</username>
+        <id>1</id>
+      </contributor>
+      <comment>Se creó una propiedad de tipo [[Has type::Texto]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="61">Esta es una propiedad de tipo [[Tiene tipo de datos::Texto]].</text>
+      <sha1>9oqtn2g7j0hvmjmc788h4o9x7wxhuc6</sha1>
     </revision>
   </page>
 </mediawiki>
